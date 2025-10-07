@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --accent: #4f46e5;
+    --text: #0f172a;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.app {
+    max-width: 760px;
+    margin: 24px auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+}
+
+.app-header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+}
+
+.app-nav button {
+    margin-left: 8px;
+}
+
+.app-main {
+    padding: 24px;
+}
