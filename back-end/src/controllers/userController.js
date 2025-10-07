@@ -82,7 +82,7 @@ const getUserProfile = async (req, res) => {
                 name: user.name,
                 email: user.email,
                 points: user.points,
-                referralLink: `http://localhost:5173/?ref=${user.referralCode}`
+                referralLink: `${process.env.FRONTEND_URL}/?ref=${user.referralCode}`
             });
         } else {
             res.status(404).json({ message: 'Usuário não encontrado.' });
